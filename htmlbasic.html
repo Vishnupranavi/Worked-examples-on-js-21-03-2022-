@@ -1,0 +1,121 @@
+<html> 
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Chris Mills">
+    <title>&ltMy page&gt</title>
+  </head>
+  <body>
+<a href="https://www.mozilla.org/" title='The Mozilla homepage'>favorite website</a>
+<p>haiii                                     a      s         p    i   r   e</p>
+<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+<!---<p>hai,</p> --->
+<p>French " <span lang="fr">Bonjour</span> "</p>
+<ul>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+  </ul>
+  <ol type="a">
+    <li>milk</li>
+    <li>eggs</li>
+    <li>bread</li>
+    <li>hummus</li>
+  </ol>
+  
+
+  <p>I'm creating a link to
+    <a href="https://www.mozilla.org/en-US/"
+       title="The best place to find more information about Mozilla's
+              mission and how to contribute">the Mozilla homepage</a>.
+    </p>
+    <p>We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure our web documents.</p>
+    <!-- <address> -->
+    <address>
+      <a href="https:mozilla.com">pranavinaga@gmail.com</a><br>
+      <a href="899976555">899976555</a>
+    </address>
+    <!-- <article> -->
+      <article class="weather">
+        <h1>Weather report</h1>
+        <article class="forecast">
+          <h3>Sunday oct 2</h3>
+          <h5>45C</h5>
+        </article>
+
+      </article>
+      <!--  -->
+      <strong>hai</strong><br>
+      <b>hai</b><br>
+      <em>hai</em><br>
+      <i>hai</i>
+      <button type="button" onclick ="document.getElementById('demo').innerHTML=Date()">click</button>
+        <p id="demo"></p>
+        <p id="pranavi"></p>
+        <p id="prav"></p>
+        <p id=demoo></p>
+        <script>
+            document.write(6+3+"<br>");
+            
+            document.write(typeof 16+"<br>");
+
+            document.write(typeof "pranavi");
+            // let x=a+b;
+            let a=10;
+            let b=10;
+            let x=a+b;
+            x++;
+            // creating objects
+            document.getElementById("pranavi").innerHTML=x;
+            const person={
+                name:"pranavi",
+                age:20,
+                location:"Chennai"
+            };
+            document.getElementById("prav").innerHTML=person.name+" is "+20+" years old "+" in "+person.location;
+
+            document.getElementById("demoo").innerHTML = typeof "john" + "<br>" + typeof 3.14 + "<br>" +typeof NaN + "<br>" ;
+            typeof(8);
+            </script>
+            <p id ="roo"></p>
+            <p id="comp"></p>
+          <!----> <button id="button">click</button>
+            <script>
+              // functions 
+              let y=myfunction(10,2);
+              document.getElementById("roo").innerHTML=y;
+              function myfunction(a,b){
+                return a*b;
+              }
+              //does not equal to
+              let e=4;
+              document.getElementById("comp").innerHTML=(e!==4);
+              // conditionals
+              let ice="cho";
+              if(ice==="cho"){
+                alert('yes');
+              }else{
+                alert('no');
+              }
+              // // add events
+               function f1(){
+              alert("YOU PRESSED");
+               }
+               var bu=document.getElementById('button');
+               bu.addEventListener("click",f1);
+               document.write("<br>");
+                // variable hoisting
+              function my(){
+                   f=10;
+                   let b=0;
+                  }
+                  my();
+                  console.log(f);
+                  //console.log(b);
+                  document.write("<br>");
+                  document.write(f);
+                  document.write("<br>");
+                  document.write(typeof 5);
+            </script>
+</body>
+</html>
